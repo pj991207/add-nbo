@@ -35,8 +35,8 @@ int main(int argc, char*argv[]){
 	uint32_t buf_change2 = htonl(buf2[0]);
 	uint32_t add = buf_change+buf_change2;
 	uint32_t byte_result = static_cast<uint32_t>(add);
-    printf("out : 0x%x\n",buf_change);
-	printf("out : 0x%x\n",buf_change2);
+    //printf("out : 0x%x\n",buf_change);
+	//printf("out : 0x%x\n",buf_change2);
 	printf("%d(0x%x) + %d(0x%x) = %d(0x%x)\n",buf_change,static_cast<int>(buf_change),buf_change2,static_cast<int>(buf_change2),buf_change+buf_change2,byte_result);
 	
 }	
